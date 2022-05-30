@@ -1,6 +1,7 @@
-#define lat 5
+#define lat 7
 #define   clo 6
-#define data 4 
+#define data 5
+// cl lat data
 int timeCho = 1000;
 unsigned long hienTai = 0;
 unsigned long thoiGian;
@@ -25,10 +26,46 @@ void delays(){
 void loop() {
  
   Serial.print(" a -------------------------!!!!----------\n");
-  delays();
+//  delays();
 
-  // digitalWrite(lat,LOW);
-  // shiftOut(data,clo,LSBFIRST,0b00111111);
-  // digitalWrite(lat,HIGH);
-  // delay(10000); 
+    digitalWrite(lat,LOW);
+   shiftOut(data,clo,LSBFIRST,0b11111111);
+   digitalWrite(lat,HIGH);
+   delay(1000);  
+   digitalWrite(lat,LOW);
+   shiftOut(data,clo,LSBFIRST,0b11111110);
+   digitalWrite(lat,HIGH);
+   delay(1000);  
+   digitalWrite(lat,LOW);
+   shiftOut(data,clo,LSBFIRST,0b11111100);
+   digitalWrite(lat,HIGH);
+   delay(1000);  
+   digitalWrite(lat,LOW);
+   shiftOut(data,clo,LSBFIRST,0b11111000);
+   digitalWrite(lat,HIGH);
+   delay(1000);  
+   digitalWrite(lat,LOW);
+   shiftOut(data,clo,LSBFIRST,0b11110000);
+   digitalWrite(lat,HIGH);
+   delay(1000);  
+   digitalWrite(lat,LOW);
+   shiftOut(data,clo,LSBFIRST,0b11100000);
+   digitalWrite(lat,HIGH);
+   delay(1000);  
+   digitalWrite(lat,LOW);
+   shiftOut(data,clo,LSBFIRST,0b11000000);
+   digitalWrite(lat,HIGH);
+   delay(1000);  
+   digitalWrite(lat,LOW);
+   shiftOut(data,clo,LSBFIRST,0b10000000);
+   digitalWrite(lat,HIGH);
+     delay(1000);  
+     digitalWrite(lat,LOW);
+     shiftOut(data,clo,LSBFIRST,0b00000000);
+     digitalWrite(lat,HIGH);
+   delay(1000);  
+}
+void leds (){
+  while(true){
+  }
 }
