@@ -52,11 +52,11 @@ void setup()
   
   // Initialize the rtc object
   rtc.begin();
-  
-  // The following lines can be uncommented to set the date and time
-  rtc.setDOW(WEDNESDAY);     // Set Day-of-Week to SUNDAY
-  rtc.setTime(22, 58, 0);     // Set the time to 12:00:00 (24hr format)
-  rtc.setDate(18, 05, 2022);   // Set the date to January 1st, 2014
+//  
+//  // The following lines can be uncommented to set the date and time
+  rtc.setDOW(SUNDAY);     // Set Day-of-Week to SUNDAY
+  rtc.setTime(15, 55, 0);     // Set the time to 12:00:00 (24hr format)
+  rtc.setDate(12, 06, 2022);   // Set the date to January 1st, 2014
 }
 
 void loop()
